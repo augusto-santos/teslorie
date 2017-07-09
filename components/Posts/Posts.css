@@ -1,0 +1,87 @@
+/* Post Style */
+
+.wrapper{
+	width: 68%;
+	margin: 30px auto 0;
+}
+
+.post_info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.post_title{
+	display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 5px;
+}
+	.post_title h4{
+		font-family: Planewalker;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.3em;
+        padding: 0 1.5em 0.3125px; /* ~24px ~5px */
+        margin: 5px 0 0;
+        border-bottom: 1px solid #444;
+	}
+	.post_title h3{
+		font-size: 1.125em; /* ~18px */
+        font-family: Planewalker;
+        font-weight: 400;
+        line-height: 1.3em;
+        margin: 5px 0;
+	}
+	.post_title h2{
+        font-size: 2.25em;
+        font-family: Planewalker;
+        font-weight: 200;
+        line-height: 1.3em;
+        margin: 5px 0;
+	}
+
+.info_post{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 10px;
+  color: #333;
+}
+	.info_post .date{
+    font-size: 0.75em; /* ~12px */
+    font-weight: 500;
+	}
+	.info_post .info_data{
+    padding: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 0.75em; /* ~12px */
+    justify-content: center;
+	}
+		.info_post .info_data .icon{
+	    font-size: 1.3333333em; /* ~16px */
+	    padding: 0 5px;
+		}
+
+@media screen and (max-width: 480px){
+  .wrapper{
+    width: 100%;
+	}
+}
+
+.dark_theme .post_title{
+    color: #fcfcfc;
+}
+    .dark_theme .post_title h4{
+        border-bottom: 1px solid #fcfcfc;
+    }
+
+.dark_theme .info_post{
+    color: #fcfcfc;
+}

@@ -1,0 +1,87 @@
+/* About Style */
+.user_about{
+  display: flex;
+	width: 100%;
+  align-items: center;
+  background: #4285f4;
+  margin: 20px 0;
+}
+
+.container_userabout{
+    width: 68%;
+    margin: 0 auto;
+}
+
+.userabout{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #9db7e2;
+}
+  .userabout img{
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 10px
+  }
+  .userabout h4{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Raleway;
+    color: #fcfcfc;
+  }
+.userabout_history{
+  width: 80%;
+  margin: 0 auto 10px;
+  padding: 20px 0px;
+  margin-bottom: 5px;
+}
+  .userabout_history p{
+    font-size: 14px;
+    font-family: Raleway;
+    color: #fdfdfd;
+    line-height: 1.3em;
+  }
+.userabout_media{
+  display: flex;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 480px){
+  /* About User */
+	.user_about{
+    margin: 10px 0;
+	}
+
+  .container_userabout{
+    width: 100%;
+  }
+
+	.userabout{
+		width: 80%;
+    justify-content: flex-start;
+		margin: 0 auto;
+		padding: 10px 0;
+		margin-bottom: 5px;
+	}
+		.userabout img{
+			margin: 0 15px
+		}
+
+	.userabout_history{
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-bottom: 1px solid #9db7e2;
+	}
+
+  .userabout_media{
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+}

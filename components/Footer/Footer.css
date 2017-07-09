@@ -1,0 +1,87 @@
+/* Footer Style */
+.footer_wrapper{
+  width: 100%;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  background: #131423;
+  flex-direction: column;
+}
+
+.footer_logo{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px
+}
+
+.footer_logo h1{
+	font-family: Planewalker;
+	font-size: 2.5625em; /* ~ 41px */
+	font-weight: 400;
+	color: #848388;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #4a4950;
+  padding: 0 25px;
+}
+
+.footer_logo h4{
+	font-size: 24px;
+  font-family: Planewalker;
+  line-height: 1.3em;
+  font-weight: 400;
+  color: #848388;
+  margin-bottom: 10px;
+}
+
+.footer_info{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+	.footer_info ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 0 20px;
+    margin: 20px 0 0;
+    border-bottom: 1px solid #4a4950;
+	}
+		.footer_info ul li{
+	    height: 100%;
+	    display: flex;
+	    padding: 0 10px;
+	    align-items: center;
+		}
+			.footer_info ul li a{
+		    text-decoration: none;
+		    color: #848388;
+		    cursor: pointer;
+		    font-size: 0.875em; /* ~14px */
+		    line-height: 1.3em;
+		    font-weight: 400;
+		    font-family: Raleway;
+		    will-change: color;
+		    transition: color .3s ease;
+			}
+				.footer_info ul li a:hover{
+					color: #c59c1c;
+				}
+	.footer_info p{
+    font-size: 0.75em; /* ~12px*/
+    margin: 5px 0;
+    color: rgb(132, 131, 136);
+    font-weight: 400;
+    line-height: 1.3em;
+	}
+
+/*@media screen and (max-width: 480px){
+
+}*/

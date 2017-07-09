@@ -1,0 +1,109 @@
+.wrapperMarkdown{
+    display: flex;
+    width: 100%;
+    font-family: Raleway;
+    font-size: 0.875em; /* ~14px */
+    color: #222;
+    /*padding: 15px;*/
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.wrapperMarkdown h1{
+     color: #111;
+    font-size: 2em; /* ~28px */
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.wrapperMarkdown h2{
+    color: #222;
+    font-size: 1.7142857em; /* ~24px*/
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.wrapperMarkdown h3{
+    font-size: 1.4285714em; /* ~20px */
+    font-weight: 500;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.wrapperMarkdown p{
+    color: #333;
+    line-height: 1.3em;
+    margin-bottom: 1em;
+}
+
+.wrapperMarkdown ul{
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.wrapperMarkdown pre{
+    font-size: 1em; /* ~14px */
+    margin: 1em 0;
+}
+
+.wrapperMarkdown img{
+    width: 100%;
+}
+
+.wrapperMarkdown a{
+    color: #4285f4;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wrapperMarkdown hr{
+    display: flex;
+    width: 100%;
+    height: 2px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 30px auto;
+}
+    .wrapperMarkdown hr:after{
+        content: '\1D24';
+        position: relative;
+        display: inline-block;
+        color: #666;
+        background: #fcfcfc;
+        font-size: 1.5714285em; /* ~22px */
+        line-height: 1.3em;
+        transform: rotate(60deg);
+    }
+
+@media screen and (max-width: 480px){
+    .wrapperMarkdown h1,
+    .wrapperMarkdown h2,
+    .wrapperMarkdown h3, 
+    .wrapperMarkdown p, 
+    .wrapperMarkdown blockquote,
+    .wrapperMarkdown hr,
+    .wrapperMarkdown ul,
+    .wrapperMarkdown section,
+    .wrapperMarkdown section ol[class='footnotes-list'] {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.dark_theme .wrapperMarkdown,
+.dark_theme .wrapperMarkdown h1,
+.dark_theme .wrapperMarkdown h2,
+.dark_theme .wrapperMarkdown h3, 
+.dark_theme .wrapperMarkdown p{
+        color: #fcfcfc;
+}
+
+.dark_theme .wrapperMarkdown hr::after{
+    background: transparent;
+    color: #fcfcfc; 
+}
