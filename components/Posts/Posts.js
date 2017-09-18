@@ -13,14 +13,16 @@ class Posts extends Component{
           </div>
           <div className={`${s.info_post}`}>
             <div className={`${s.date}`}>Postado em {this.props.date}</div>
-            <div className={`${s.info_data}`}>
-              <i className={`material-icons ${s.icon}`}>visibility</i>{this.props.viewers}
-            </div>
-            <div className={`${s.info_data}`}>
-              <i className={`material-icons ${s.icon}`}>favorite</i>{this.props.like}
-            </div>
-            <div className={`${s.info_data}`}>
-              <i className={`material-icons ${s.icon}`}>forum</i>{this.props.commentary}
+            <div className={`${s.info_sec_row}`}>
+              <div className={`${s.info_data}`}>
+                <i className={`material-icons ${s.icon}`}>visibility</i>{this.props.viewers}
+              </div>
+              <div className={`${s.info_data}`}>
+                <i className={`material-icons ${s.icon}`}>favorite</i>{this.props.like}
+              </div>
+              <div className={`${s.info_data}`}>
+                <i className={`material-icons ${s.icon}`}>forum</i>{this.props.commentary}
+              </div>
             </div>
           </div>
         </div>

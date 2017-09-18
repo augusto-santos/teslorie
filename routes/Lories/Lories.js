@@ -2,23 +2,20 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import Markdown from '../../components/Markdown'
-// import io from 'socket.io-client'
 import { loadPost, loadFileMd } from '../../actions/Lories/action'
 import s from './Lore.css'
-
 /** Components */
 import Header from '../../components/Header'
 import Posts from '../../components/Posts'
 import Userabout from '../../components/Userabout'
 import Footer from '../../components/Footer'
 
-// const socket = io()
-
 class Lore extends Component{
 
 	componentDidMount(){
-		this.props.loadPost(3)
-		document.title = this.props.post.title
+		this.props.loadPost(2)
+		const title = this.props.post.title ? this.props.post.title : "TES - Lories"
+		document.title = title
 	}
 
 	render(){
@@ -29,10 +26,10 @@ class Lore extends Component{
 				<Posts 
 					serie={post.serie}
 					title={post.title}
-					date={post.atCreated}
-					viewers={post.viewrs}
-					like={5}
-					commentary={post.commentaries}>
+					date={post.posted_at}
+					viewers={post.views}
+					like={post.likes}
+					commentary={post.comments}>
 						
 						<Markdown Content={content} />
 					</Posts>

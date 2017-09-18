@@ -16,7 +16,7 @@ export const loadFileMd = ( file ) => {
 /** USER Info of Post */
 export const loadUserPost = ( id ) => {
 	return dispatch => {
-		cnx.get(`/Autores/${id}`)
+		cnx.get(`/Writers/${id}`)
 			.then(resp => dispatch({
 				type: LOAD_USER_POST,
 				payload: resp.data
@@ -26,14 +26,15 @@ export const loadUserPost = ( id ) => {
 /** Post itself */
 export const loadPost = ( id ) => {
 	return dispatch => {
-		cnx.get(`/Posts/${id}`)
+		cnx.get(`/Lories/${id}`)
 			.then(resp => dispatch({
 				type: LOADED_POST,
 				payload: resp.data
 			}))
 			.then(res => dispatch(
-				loadUserPost(res.payload.autorId),
-				dispatch(loadFileMd(res.payload.contentMD))
+				loadUserPost(res.payload.writerId),
+				dispatch(loadFileMd(res.payload.content_md))
+				// console.log(res.payload.writerId)
 			))
 	}
 }
